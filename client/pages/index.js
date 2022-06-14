@@ -20,8 +20,8 @@ export async function getServerSideProps() {
     method: "GET",
     url: "https://vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com/api/npm-covid-data/",
     headers: {
-      "X-RapidAPI-Host":'vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com',
-      "X-RapidAPI-Key": "5072ad6e0emshf9fdfafacff186ap1b7789jsn6b034a27e6f8",
+      "X-RapidAPI-Host":'process.env.X-RapidApi',
+      "X-RapidAPI-Key": "process.enc.key",
     },
   });
   const countrydata=await api.data
