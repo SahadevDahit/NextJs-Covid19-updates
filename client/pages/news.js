@@ -10,8 +10,8 @@ export async function getServerSideProps() {
     url: "https://vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com/api/news/get-coronavirus-news/0",
     headers: {
       "X-RapidAPI-Host":
-        "vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com",
-      "X-RapidAPI-Key": "5072ad6e0emshf9fdfafacff186ap1b7789jsn6b034a27e6f8",
+        "process.env.host",
+      "X-RapidAPI-Key": "process.env.key",
     },
   });
 
@@ -20,17 +20,17 @@ export async function getServerSideProps() {
     url: "https://vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com/api/news/get-health-news/1",
     headers: {
       "X-RapidAPI-Host":
-        "vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com",
-      "X-RapidAPI-Key": "5072ad6e0emshf9fdfafacff186ap1b7789jsn6b034a27e6f8",
+        "process.env.host",
+      "X-RapidAPI-Key": "process.env.key",
     },
   });
   let api3 = await axios.request({
     method: "GET",
     url: "https://vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com/api/news/get-vaccine-news/0",
     headers: {
-      "X-RapidAPI-Host":
-        "vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com",
-      "X-RapidAPI-Key": "5072ad6e0emshf9fdfafacff186ap1b7789jsn6b034a27e6f8",
+     "X-RapidAPI-Host":
+        "process.env.host",
+      "X-RapidAPI-Key": "process.env.key",
     },
   });
   let api4 = await axios.request({
@@ -38,8 +38,8 @@ export async function getServerSideProps() {
     url: "https://vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com/api/vaccines/get-all-vaccines",
     headers: {
       "X-RapidAPI-Host":
-        "vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com",
-      "X-RapidAPI-Key": "5072ad6e0emshf9fdfafacff186ap1b7789jsn6b034a27e6f8",
+        "process.env.host",
+      "X-RapidAPI-Key": "process.env.key",
     },
   });
   const newsdata = await api1.data;
