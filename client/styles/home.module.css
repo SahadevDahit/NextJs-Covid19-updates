@@ -1,0 +1,17 @@
+.countryrecord {
+    border-radius: 36px;
+    background: white;
+    box-shadow: 11px 11px 22px #a5a5a5, -11px -11px 22px #ffffff;
+}
+
+.piechart {
+    height: 100%;
+    width: 100%;
+    scroll-padding-inline: 4rem;
+}
+
+.piechart {
+    border-radius: 36px;
+    background: white;
+    box-shadow: 11px 11px 22px #a5a5a5, -11px -11px 22px #ffffff;
+}

@@ -1,0 +1,82 @@
+    #img {
+        width: 100%;
+        height: 90vh;
+    }
+    
+    #carouselbutton {
+        display: none;
+    }
+    
+    #carasoulitem {
+        width: 60%;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border-radius: 2rem;
+    }
+    
+    #card {
+        width: 1200px;
+        margin: 0px auto;
+        columns: 4;
+        column-gap: 10px;
+    }
+    
+    #card #box {
+        width: 270px;
+        padding: 10px;
+        background-color: #f1f1f1;
+        border: 1px solid gray;
+        margin-bottom: 10px;
+        break-inside: avoid;
+    }
+    
+    #card #box img {
+        width: 100%;
+        height: 170px;
+        object-fit: contain;
+    }
+    
+    #vaccine {
+        border-radius: 50px;
+        background: #ffffff;
+        box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+    }
+    
+    @media (max-width: 992px) {
+        #card {
+            width: 75rem;
+            columns: 3;
+        }
+        #card #box {
+            width: 100%;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        #card {
+            width: 50rem;
+            columns: 2;
+        }
+        #card #box {
+            width: 100%;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        #carasoulitem h5 {
+            display: none
+        }
+        #carasoulitem p {
+            display: none
+        }
+        #carasoulitem #link {
+            color: red
+        }
+        #card {
+            width: 25rem;
+            columns: 1;
+        }
+        #card #box {
+            width: 100%;
+        }
+    }

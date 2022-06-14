@@ -1,0 +1,20 @@
+.piechart {
+    height: 300px;
+}
+
+.piechart {
+    border-radius: 36px;
+    background: white;
+    box-shadow: 11px 11px 22px #a5a5a5, -11px -11px 22px #ffffff;
+}
+
+.box {
+    color: red
+}
+
+.pie {
+    width: 50%;
+    height: 10rem;
+    padding-left: 10px;
+    /* float: right; */
+}

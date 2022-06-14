@@ -1,0 +1,10 @@
+#login {
+    width: 50%;
+}
+
+@media (max-width: 800px) {
+    #login {
+        width: 100%;
+        color: red;
+    }
+}
