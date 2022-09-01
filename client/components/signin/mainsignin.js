@@ -1,25 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const mainsignin = ({ forgot, change }) => {
   const [signindata, setsignindata] = useState({
     emailaddress: "",
     password: "",
   });
+
+  const notify = (e) => {
+    e.preventDefault();
+    toast("Wow so easy!");
+  };
   const config = {
     headers: {
-      "Content-Type": "application/json"
-    }
-  }
+      "Content-Type": "application/json",
+    },
+  };
+
   const signin = (e) => {
     e.preventDefault();
 
     axios
-      .post("https://covid19-updatess.herokuapp.com/signin", {
-        signindata: signindata,
-      },config)
+      .post(
+        "https://covid19-updatess.herokuapp.com/signin",
+        {
+          signindata: signindata,
+        },
+        config
+      )
       .then((response) => {
         if (response.status === 200) {
-          localStorage.setItem("token", response.data.token)
+          localStorage.setItem("token", response.data.token);
           alert("successfully logged in");
         }
       })
@@ -89,6 +101,7 @@ const mainsignin = ({ forgot, change }) => {
             <button
               type="submit"
               onClick={(e) => {
+                notify(e);
                 signin(e);
               }}
               className="btn btn-primary float-bottom "
@@ -98,6 +111,7 @@ const mainsignin = ({ forgot, change }) => {
           </div>
         </div>
       </form>
+      <ToastContainer />
     </div>
   );
 };
