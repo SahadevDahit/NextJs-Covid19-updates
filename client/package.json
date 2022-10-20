@@ -1,31 +1,35 @@
 {
-    "name": "client",
-    "version": "0.1.0",
-    "private": true,
-    "scripts": {
-        "dev": "next dev",
-        "build": "next build",
-        "start": "next start",
-        "lint": "next lint"
-    },
-    "dependencies": {
-        "axios": "^0.27.2",
-        "bootstrap-icons": "^1.8.2",
-        "bootstrap5": "^1.1.9",
-        "chartjs": "^0.3.24",
-        "chartjs-plugin-zoom": "^1.2.1",
-        "cors": "^2.8.5",
-        "next": "^12.1.6",
-        "react": "^18.1.0",
-        "react-chartjs-2": "^4.1.0",
-        "react-dom": "18.1.0",
-        "react-flags-select": "^2.2.3",
-        "react-phone-input-2": "^2.15.0",
-        "react-toastify": "^9.0.8",
-        "vercel": "^24.2.4"
-    },
-    "devDependencies": {
-        "babel-eslint": "^10.1.0",
-        "eslint-config-next": "12.1.6"
-    }
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bootstrap-icons": "^1.8.2",
+    "bootstrap5": "^1.1.9",
+    "chartjs": "^0.3.24",
+    "chartjs-plugin-zoom": "^1.2.1",
+    "cors": "^2.8.5",
+    "next": "^12.1.6",
+    "react": "^18.1.0",
+    "react-chartjs-2": "^4.1.0",
+    "react-dom": "18.1.0",
+    "react-flags-select": "^2.2.3",
+    "react-phone-input-2": "^2.15.0",
+    "react-toastify": "^9.0.8",
+    "vercel": "^24.2.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint-config-next": "12.1.6"
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "next.config.js",
+  "author": "",
+  "license": "ISC"
 }

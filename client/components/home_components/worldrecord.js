@@ -11,7 +11,7 @@ import {
 } from "chart.js";
 Chart.register(ArcElement, Tooltip, Legend, Title, CategoryScale, LinearScale);
 
-const worldrecord = ({ data, coviddata }) => {
+const Worldrecord = ({ data, coviddata }) => {
   return (
     <>
       <div className="row container py-5 w-100 h-100 d-flex">
@@ -32,8 +32,7 @@ const worldrecord = ({ data, coviddata }) => {
             NewCases <span className="mx-2">{coviddata.NewCases}</span>
           </h5>
           <h5>
-            TotalDeaths{" "}
-            <span className="mx-2"> {coviddata.TotalDeaths}</span>
+            TotalDeaths <span className="mx-2"> {coviddata.TotalDeaths}</span>
           </h5>
           <h5>
             NewDeaths <span className="mx-2"> {coviddata.NewDeaths}</span>
@@ -43,12 +42,10 @@ const worldrecord = ({ data, coviddata }) => {
             <span className="mx-2"> {coviddata.TotalRecovered}</span>
           </h5>
           <h5>
-            NewRecovered{" "}
-            <span className="mx-2">{coviddata.NewRecovered}</span>
+            NewRecovered <span className="mx-2">{coviddata.NewRecovered}</span>
           </h5>
           <h5>
-            ActiveCases{" "}
-            <span className="mx-2"> {coviddata.ActiveCases}</span>
+            ActiveCases <span className="mx-2"> {coviddata.ActiveCases}</span>
           </h5>
         </div>
 
@@ -60,4 +57,4 @@ const worldrecord = ({ data, coviddata }) => {
   );
 };
 
-export default React.memo(worldrecord);
+export default Worldrecord;

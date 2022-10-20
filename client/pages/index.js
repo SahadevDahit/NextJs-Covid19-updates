@@ -1,7 +1,7 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Chart from "chart.js/auto";
-import WorldRecord from "../components/home_components/worldrecord";
-import CountryRecord from "../components/home_components/countryrecord";
+import WorldRecord from "../components/home_components/Worldrecord";
+import CountryRecord from "../components/home_components/Countryrecord";
 import axios from "axios";
 import styles from "../styles/home.module.css";
 
@@ -16,15 +16,16 @@ import {
 Chart.register(ArcElement, Tooltip, Legend, Title, CategoryScale, LinearScale);
 
 export async function getServerSideProps() {
- const api= await axios.request({
+  const api = await axios.request({
     method: "GET",
     url: "https://vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com/api/npm-covid-data/",
     headers: {
-      "X-RapidAPI-Host":'process.env.X-RapidApi',
-      "X-RapidAPI-Key": "process.enc.key",
+      "X-RapidAPI-Host":
+        "vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com",
+      "X-RapidAPI-Key": "5072ad6e0emshf9fdfafacff186ap1b7789jsn6b034a27e6f8",
     },
   });
-  const countrydata=await api.data
+  const countrydata = await api.data;
 
   return {
     props: {
@@ -33,8 +34,7 @@ export async function getServerSideProps() {
   };
 }
 const Home = ({ result }) => {
-
-  const[state,setstate]=useState(false)
+  const [state, setstate] = useState(false);
   const data = {
     labels: ["TotalCases", "TotalDeaths", "TotalRecovered"],
     datasets: [
@@ -57,7 +57,7 @@ const Home = ({ result }) => {
 
   return (
     <>
-      {state=== true ? (
+      {state === true ? (
         <>
           <h1>Loading</h1>
         </>

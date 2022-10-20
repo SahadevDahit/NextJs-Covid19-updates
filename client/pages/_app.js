@@ -2,8 +2,8 @@ import "../styles/globals.css";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import Head from "next/head";
-import axios from 'axios';
-axios.defaults.headers.post['Content-Type'] = 'application/json';
+import axios from "axios";
+axios.defaults.headers.post["Content-Type"] = "application/json";
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -14,12 +14,15 @@ function MyApp({ Component, pageProps }) {
         <meta name="author" content="Sahadev Dahit" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3816621514447660"
-     crossorigin="anonymous"></script>
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3816621514447660"
+        crossOrigin="anonymous"
+      ></script>
       <link
-            href="https://fonts.googleapis.com/css2?family=Inter&display=optional"
-            rel="stylesheet"
-          />
+        href="https://fonts.googleapis.com/css2?family=Inter&display=optional"
+        rel="stylesheet"
+      />
       <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
         rel="stylesheet"
