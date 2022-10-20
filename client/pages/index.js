@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Chart from "chart.js/auto";
-import WorldRecord from "../components/home_components/Worldrecord";
-import CountryRecord from "../components/home_components/Countryrecord";
+import WorldRecord from "../components/home_components/worldrecord";
+import CountryRecord from "../components/home_components/countryrecord";
 import axios from "axios";
 import styles from "../styles/home.module.css";
 
